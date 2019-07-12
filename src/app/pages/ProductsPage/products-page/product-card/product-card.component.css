@@ -1,0 +1,17 @@
+.button {
+    display: block;
+    width: 8rem;
+    margin:auto;
+    margin-bottom: 1rem;
+}
+
+.card {
+    min-width: 200px;
+    min-height: 350px;
+}
+
+.button:hover{background-color:#627;}
+
+.card-content:hover {
+    background: rgb(42, 194, 156);
+}

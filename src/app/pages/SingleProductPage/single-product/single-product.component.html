@@ -1,0 +1,36 @@
+<section class="hero is-primary">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">
+          {{product.productName}}
+        </h1>
+        <h2 class="subtitle">
+          {{product.category}}
+        </h2>
+      </div>
+    </div>
+  </section>
+  <section class="hero is-medium is-light is-bold">
+      <div class="hero-body">
+        <div class="container">
+           <div class="columns">
+             <div class="column one">
+                <img src="{{product.imagePath}}" alt="No Image" srcset="">
+             </div>
+             <div class="column two has-text-centered">
+                <h1 class = "is-size-1">{{product.productName}}</h1>
+                <h1 class = "is-size-2">{{product.category}}</h1>
+                <h1 class = "is-size-3">{{product.price+" Lei"}}</h1>
+                <a class="button is-danger" (click) = "addProductToCart(e)">Add To Cart</a>
+             </div>
+           </div>
+        </div>
+      </div>
+    </section>
+  <section class="hero is-medium is-primary is-bold">
+      <div class="hero-body">
+        <div class="container">
+            {{product.description}}
+        </div>
+      </div>
+    </section>

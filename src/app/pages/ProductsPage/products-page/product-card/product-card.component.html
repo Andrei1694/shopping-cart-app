@@ -1,0 +1,21 @@
+<div class="card">
+  <div class="card-image">
+    <figure class="image is-4by3">
+      <img src="{{prodCard.imagePath}}" alt="Placeholder image" />
+    </figure>
+  </div>
+  <div class="card-content">
+    <div class="media">
+      <div class="media-content">
+        <p class="title is-4">{{ prodCard.productName }}</p>
+        <p class="subtitle is-6">{{ prodCard.category }}</p>
+      </div>
+    </div>
+    <div class="content">
+      <strong>{{ prodCard.price + " Lei" }}</strong>
+      
+    </div>
+    <a class="button is-danger" (click)="addProductToCart()">Add To Cart</a>
+      <a class="button is-warning" (click)="goTo()">Details</a>
+  </div>
+</div>

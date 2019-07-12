@@ -1,0 +1,21 @@
+<div class="container">
+  
+<div class="columns" *ngIf="isLoaded">
+    <div class="column is-one-fifth">
+       <app-category-panel [categories]= "categories_parent"></app-category-panel>
+    </div>
+    <div class="column">
+        <div class="columns is-multiline">
+            <app-product-card 
+            class="column is-3-desktop is-12-mobile" 
+            *ngFor="let product of products | filterdata:test.categoryName: 'category'"  
+            [prodCard] = "product"
+            
+          ></app-product-card>
+    </div>
+      </div>
+  </div>
+  <div class="columns">
+      <progress class="progress is-large is-info" max="100" *ngIf = "!isLoaded">100%</progress>
+  </div>
+</div>

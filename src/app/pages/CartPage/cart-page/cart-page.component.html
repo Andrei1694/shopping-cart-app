@@ -1,0 +1,26 @@
+<div class="container">
+        <table class="table">
+                <thead>
+                  <tr>
+                      <th>.</th>
+                    <th>Product Name</th>
+                    <th>Team</th>
+                    <th>Pld</th>
+                    <th>>W</th>
+                  </tr>
+                </thead>
+                <tfoot>
+                      <tr class="price">
+                              <h3>{{ "Price: " + this.test.getTotalPrice() + " Lei"}}</h3>
+                      </tr>
+                    </tfoot>
+                <tbody>
+                  <tr *ngFor="let prod of productList">
+                    <th><img src="{{ prod.imagePath }}" alt="No Image"></th>
+                    <th>{{ prod.productName }}</th>
+                    <td>{{ prod.category }}</td>
+                    <td>{{ prod.price }}</td>
+                  </tr>
+                </tbody>
+              </table>
+</div>

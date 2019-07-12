@@ -1,0 +1,19 @@
+<nav class="panel">
+  <p class="panel-heading">
+    Filter products
+  </p>
+ 
+
+  <a class="panel-block is-active" (click) = "test.setCategory(cat.name)" *ngFor = "let cat of test.categories">
+    <span class="panel-icon">
+      <i class="fas fa-book" aria-hidden="true"></i>
+    </span>
+    {{cat.name}}
+  </a>
+  
+  <div class="panel-block">
+    <button class="button is-link is-outlined is-fullwidth" (click) = "test.resetCategories()">
+      reset all filters
+    </button>
+  </div>
+</nav>
